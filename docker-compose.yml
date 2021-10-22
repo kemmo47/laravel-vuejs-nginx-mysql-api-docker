@@ -13,6 +13,7 @@ services:
       - ./todo:/var/www/api
     depends_on:
       - vuejs
+      - composer_installation
     ports:
       - 80:80
     networks:
@@ -65,6 +66,15 @@ services:
       MYSQL_USER: apptodo
       MYSQL_PASSWORD: todo
       MYSQL_ROOT_PASSWORD: todo
+    networks:
+      - app
+
+  composer_installation:
+    container_name: composer_installation
+    image: composer
+    volumes:
+      - ./todo:/app
+    command: composer install --ignore-platform-reqs
     networks:
       - app
 
