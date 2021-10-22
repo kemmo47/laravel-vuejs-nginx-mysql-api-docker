@@ -1,0 +1,59 @@
+.text-header-todos{
+    color:antiquewhite;
+}
+
+.header-todos{
+    padding: 15px 10px;
+    background: #00b77c;
+}
+
+.form_header_todos{
+    padding: 10px 5px;
+    margin-bottom: 10px;
+}
+
+.container-todos{
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid #00b77c;
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+
+.body-todos{
+    margin: 10px;
+}
+
+.item-todos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #00b77c;
+    padding: 10px 0px;
+}
+
+.button_footer_todos{
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid #00b77c;
+    padding-top: 10px;
+}
+
+.button_footer_todos button{
+    transition: all 0.65s;
+}
+
+.button_footer_todos button:hover{
+    color: #00b77c;
+    background-color: aliceblue;
+}
+
+.info-todos .active{
+    color: #00b77c;
+    text-decoration: line-through;
+}
+
+.form-check-input:checked[type=checkbox]{
+    background-color: #00b77c;
+    border: 1px solid #00ffae;
+}
